@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Sira Maps Pro</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="ابحث عن حدث...">
+        <div id="searchResults" class="results-box"></div>
+    </div>
+    <div id="map"></div>
+    <div class="bottom-panel">
+        <div class="timeline-container">
+            <h3 id="yearLabel">السنة الهجرية: 0</h3>
+            <input type="range" id="yearSlider" min="-13" max="11" value="0">
+        </div>
+        <div id="eventCard" class="event-card">
+            <h2 id="eventTitle">استكشف السيرة</h2>
+            <p id="eventDesc">حرك الشريط أو اضغط على النقاط.</p>
+            <div class="actions">
+                <button onclick="playNarrator()" class="btn">🎙️ راوي</button>
+                <button onclick="locateMe()" class="btn gold">📍 أين أنا؟</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

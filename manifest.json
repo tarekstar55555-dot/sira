@@ -1,0 +1,9 @@
+{
+  "name": "Sira Maps Pro",
+  "short_name": "السيرة",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FDF5E6",
+  "theme_color": "#C19A6B",
+  "icons": [{ "src": "icon.png", "sizes": "512x512", "type": "image/png" }]
+}
